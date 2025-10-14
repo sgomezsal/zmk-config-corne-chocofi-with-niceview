@@ -15,16 +15,16 @@
     compatible = "zmk,keymap";
 
     base_layer {
-// -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |     |     |  J  |  L  |  U  |  Y  |  ;  | BKSP |
-// |  A  |  R  |  S  |  T  |  G  |     |     |  M  |  N  |  E  |  I  |  O  |  '   |
-// |  Z  |  X  |  C  |  D  |  V  |     |     |  K  |  H  |  ,  |  .  |  /  | ESC  |
-//               | Super | Alt | Ctrl |      | Shift | Sym | Fun |
+      // -----------------------------------------------------------------------------------------
+      // |  Q  |  W  |  F  |  P  |  B  |     |     |  J  |  L  |  U  |  Y  |  ;  | BKSP |
+      // |  A  |  R  |  S  |  T  |  G  |     |     |  M  |  N  |  E  |  I  |  O  |  '   |
+      // |  Z  |  X  |  C  |  D  |  V  |     |     |  K  |  H  |  ,  |  .  |  /  | ESC  |
+      //                    | Esc | Spc | Nav |   | Sym | Num | Fun |
       bindings = <
-  &kp Q &kp W &kp F &kp P &kp B             &kp J &kp L &kp U &kp Y &kp SEMI &kp BSPC
-  &kp A &kp R &kp S &kp T &kp G             &kp M &kp N &kp E &kp I &kp O &kp SQT
-  &kp Z &kp X &kp C &kp D &kp V             &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp ESC
-             &kp LGUI &kp LALT &kp LCTRL    &kp LSHFT &mo 5 &mo 6
+        &kp Q &kp W &kp F &kp P &kp B &trans        &kp J &kp L &kp U &kp Y &kp SEMI &kp BSPC
+        &kp A &kp R &kp S &kp T &kp G &trans        &kp M &kp N &kp E &kp I &kp O &kp SQT
+        &kp Z &kp X &kp C &kp D &kp V &trans        &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp ESC
+        &kp ESC &kp SPACE &mo 1     &mo 2 &mo 3 &mo 4
       >;
     };
 
