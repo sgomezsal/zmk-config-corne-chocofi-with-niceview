@@ -23,11 +23,20 @@
 &trans  &kp Q       &kp W           &kp F        &kp P             &kp B        &kp J    &kp L              &kp U        &kp Y            &kp SQT      &trans
 &trans  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LGUI O   &trans
 &trans  &lt 3 Z     &kp X           &kp C        &kp D             &kp V        &kp K    &kp H              &kp COMMA    &kp DOT          &lt 3 SLASH  &trans
-                                    &kp LGUI     &mo 1             &kp SPACE    &kp RET  &mo 0              &kp RALT
+                                    &kp LGUI     &mo 2             &kp SPACE    &kp RET  &mo 0              &kp RALT
             >;
         };
 
-        lower_layer {
+        nav_layer {
+            bindings = <
+&trans  &trans    &trans        &trans     &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kt LGUI  &kt LEFT_ALT  &kt LCTRL  &kt LEFT_SHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans        &trans     &trans          &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans     &trans          &trans    &trans  &trans  &trans
+            >;
+        };
+
+        mouse_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -42,7 +51,16 @@
             >;
         };
 
-        raise_layer {
+        button_layer {
+            bindings = <
+&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kt K_CUT     &kp C_AC_UNDO  &trans
+&trans  &kp LGUI       &kp LALT      &kt LCTRL      &kp LSHFT       &trans           &trans         &kp LSHFT       &kt RIGHT_CONTROL  &kp RALT      &kp LGUI       &trans
+&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kt C_AC_COPY  &kt C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kt C_AC_PASTE  &kt C_AC_COPY      &kt C_AC_CUT  &kp C_AC_UNDO  &trans
+                                     &trans         &trans          &trans           &trans         &trans          &trans
+            >;
+        };
+
+        media_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -57,12 +75,30 @@
             >;
         };
 
-        button_layer {
+        num_layer {
             bindings = <
-&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kt K_CUT     &kp C_AC_UNDO  &trans
-&trans  &kp LGUI       &kp LALT      &kt LCTRL      &kp LSHFT       &trans           &trans         &kp LSHFT       &kt RIGHT_CONTROL  &kp RALT      &kp LGUI       &trans
-&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kt C_AC_COPY  &kt C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kt C_AC_PASTE  &kt C_AC_COPY      &kt C_AC_CUT  &kp C_AC_UNDO  &trans
-                                     &trans         &trans          &trans           &trans         &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        sym_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        fun_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
