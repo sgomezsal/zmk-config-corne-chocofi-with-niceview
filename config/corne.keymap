@@ -59,10 +59,10 @@
 
         button_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kt K_CUT     &kp C_AC_UNDO  &trans
+&trans  &kp LGUI       &kp LALT      &kt LCTRL      &kp LSHFT       &trans           &trans         &kp LSHFT       &kt RIGHT_CONTROL  &kp RALT      &kp LGUI       &trans
+&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kt C_AC_COPY  &kt C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kt C_AC_PASTE  &kt C_AC_COPY      &kt C_AC_CUT  &kp C_AC_UNDO  &trans
+                                     &trans         &trans          &trans           &trans         &trans          &trans
             >;
         };
     };
