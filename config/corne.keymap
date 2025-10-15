@@ -38,8 +38,13 @@
         compatible = "zmk,combos";
 
         n_tilde_combo {
-            bindings = <&kp RA(L)>;
+            bindings = <&kp D>;
             key-positions = <1 21>;
+        };
+
+        n_tilde_upper_combo {
+            bindings = <&kp S>;
+            key-positions = <21 2>;
         };
     };
 
