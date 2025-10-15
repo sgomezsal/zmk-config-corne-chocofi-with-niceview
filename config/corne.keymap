@@ -34,6 +34,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        n_tilde_combo {
+            bindings = <&kp RA(L)>;
+            key-positions = <1 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
