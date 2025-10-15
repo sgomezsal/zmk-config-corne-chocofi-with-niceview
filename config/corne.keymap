@@ -37,7 +37,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Base {
+        base_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -50,18 +50,22 @@
 &none  &lt 3 Z      &kp X            &kp C         &kp D              &kp V        &kp K        &kp H               &kp COMMA     &kp DOT           &lt 3 SLASH  &none
                                      &lt 4 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE     &lt 7 DELETE
             >;
+
+            label = "Base";
         };
 
-        Nav {
+        nav_layer {
             bindings = <
 &none  &none     &none         &none      &none           &none    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &none
 &none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK   &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT      &none
 &none  &none     &none         &none      &none           &none    &kp INSERT     &kp C_AC_HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END        &none
                                &none      &none           &none    &kp ENTER      &kp BACKSPACE   &kp DELETE
             >;
+
+            label = "Nav";
         };
 
-        Mouse {
+        mouse_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -74,6 +78,8 @@
 &none  &none     &none         &none      &none           &none    &none          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_LEFT  &none
                                &none      &none           &none    &mkp RCLK      &mkp LCLK       &mkp MCLK
             >;
+
+            label = "Mouse";
         };
 
         Button {
@@ -83,6 +89,8 @@
 &none  &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_REDO    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kp C_AC_CUT  &kp C_AC_UNDO  &none
                                     &mkp MCLK      &mkp LCLK       &mkp RCLK        &mkp RCLK      &mkp LCLK       &mkp MCLK
             >;
+
+            label = "Button";
         };
 
         Media {
@@ -98,6 +106,8 @@
 &none  &none     &none         &none      &none           &none    &out OUT_TOG       &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &none
                                &none      &none           &none    &kp C_PLAY_PAUSE   &kp C_NEXT      &kp K_MUTE
             >;
+
+            label = "Media";
         };
 
         Num {
@@ -107,6 +117,8 @@
 &none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BACKSLASH        &none  &none            &none      &none          &none     &none
                           &kp DOT  &kp N0  &kp MINUS            &none  &none            &none
             >;
+
+            label = "Num";
         };
 
         Sym {
@@ -116,6 +128,8 @@
 &none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none  &none            &none      &none          &none     &none
                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &none  &none            &none
             >;
+
+            label = "Sym";
         };
 
         Fun {
@@ -125,6 +139,8 @@
 &none  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none     &none
                         &kp C_MENU  &kp SPACE  &kp TAB            &none  &none            &none
             >;
+
+            label = "Fun";
         };
     };
 };
