@@ -50,20 +50,18 @@
 &none  &lt 3 Z      &kp X            &kp C         &kp D              &kp V        &kp K        &kp H               &kp COMMA     &kp DOT           &lt 3 SLASH  &none
                                      &lt 4 ESCAPE  &lt 1 SPACE        &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE     &lt 7 DELETE
             >;
-
-            label = "Base";
         };
 
-        nav_layer {
+        Nav {
             bindings = <
-&trans  &trans    &trans        &trans     &trans          &trans    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &trans
-&trans  &kt LGUI  &kt LEFT_ALT  &kt LCTRL  &kt LEFT_SHIFT  &trans    &kt CAPSLOCK   &kt LEFT        &kt DOWN       &kt UP        &kt RIGHT      &trans
-&trans  &trans    &trans        &trans     &trans          &trans    &kp INSERT     &kp C_AC_HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END        &trans
-                                &trans     &trans          &trans    &kp ENTER      &kp BACKSPACE   &kp DELETE
+&none  &none     &none         &none      &none           &none    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY  &kp C_AC_CUT  &kp C_AC_UNDO  &none
+&none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp CAPSLOCK   &kp LEFT        &kp DOWN       &kp UP        &kp RIGHT      &none
+&none  &none     &none         &none      &none           &none    &kp INSERT     &kp C_AC_HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END        &none
+                               &none      &none           &none    &kp ENTER      &kp BACKSPACE   &kp DELETE
             >;
         };
 
-        mouse_layer {
+        Mouse {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -71,23 +69,23 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans    &trans        &trans     &trans          &trans    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY   &kp C_AC_CUT  &kp C_AC_UNDO   &trans
-&trans  &kt LGUI  &kt LEFT_ALT  &kt LCTRL  &kt LEFT_SHIFT  &trans    &trans         &kp LEFT        &kp DOWN        &kp UP        &kt RIGHT       &trans
-&trans  &trans    &trans        &trans     &trans          &trans    &trans         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_LEFT  &trans
-                                &trans     &trans          &trans    &mkp RCLK      &mkp LCLK       &mkp MCLK
+&none  &none     &none         &none      &none           &none    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY   &kp C_AC_CUT  &kp C_AC_UNDO   &none
+&none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &none          &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT       &none
+&none  &none     &none         &none      &none           &none    &none          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_LEFT  &none
+                               &none      &none           &none    &mkp RCLK      &mkp LCLK       &mkp MCLK
             >;
         };
 
-        button_layer {
+        Button {
             bindings = <
-&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kt K_CUT     &kp C_AC_UNDO  &trans
-&trans  &kp LGUI       &kp LALT      &kt LCTRL      &kp LSHFT       &trans           &trans         &kp LSHFT       &kt RIGHT_CONTROL  &kp RALT      &kp LGUI       &trans
-&trans  &kp C_AC_UNDO  &kt C_AC_CUT  &kt C_AC_COPY  &kt C_AC_PASTE  &kt C_AC_REDO    &kt C_AC_REDO  &kt C_AC_PASTE  &kt C_AC_COPY      &kt C_AC_CUT  &kp C_AC_UNDO  &trans
-                                     &mkp MCLK      &mkp LCLK       &mkp RCLK        &mkp RCLK      &mkp LCLK       &mkp MCLK
+&none  &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_REDO    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kp K_CUT     &kp C_AC_UNDO  &none
+&none  &kp LGUI       &kp LALT      &kp LCTRL      &kp LSHFT       &none            &none          &kp LSHFT       &kp RIGHT_CONTROL  &kp RALT      &kp LGUI       &none
+&none  &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_REDO    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kp C_AC_CUT  &kp C_AC_UNDO  &none
+                                    &mkp MCLK      &mkp LCLK       &mkp RCLK        &mkp RCLK      &mkp LCLK       &mkp MCLK
             >;
         };
 
-        media_layer {
+        Media {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -95,37 +93,37 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans    &trans        &trans     &trans          &trans    &trans             &trans          &trans             &trans           &trans        &trans
-&trans  &kt LGUI  &kt LEFT_ALT  &kt LCTRL  &kt LEFT_SHIFT  &trans    &ext_power EP_TOG  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT    &trans
-&trans  &trans    &trans        &trans     &trans          &trans    &out OUT_TOG       &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &trans
-                                &trans     &trans          &trans    &kp C_PLAY_PAUSE   &kp C_NEXT      &kp K_MUTE
+&none  &none     &none         &none      &none           &none    &none              &none           &none              &none            &none         &none
+&none  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &ext_power EP_TOG  &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT    &none
+&none  &none     &none         &none      &none           &none    &out OUT_TOG       &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2     &bt BT_SEL 3  &none
+                               &none      &none           &none    &kp C_PLAY_PAUSE   &kp C_NEXT      &kp K_MUTE
             >;
         };
 
-        num_layer {
+        Num {
             bindings = <
-&trans  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &trans  &trans           &trans     &trans         &trans    &trans
-&trans  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL            &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BACKSLASH        &trans  &trans           &trans     &trans         &trans    &trans
-                           &kp DOT  &kp N0  &kp MINUS            &trans  &trans           &trans
+&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &none  &none            &none      &none          &none     &none
+&none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
+&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BACKSLASH        &none  &none            &none      &none          &none     &none
+                          &kp DOT  &kp N0  &kp MINUS            &none  &none            &none
             >;
         };
 
-        sym_layer {
+        Sym {
             bindings = <
-&trans  &kt LEFT_BRACE  &kt AMPERSAND    &kp KP_MULTIPLY       &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans           &trans     &trans         &trans    &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &trans  &trans           &trans     &trans         &trans    &trans
-                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans  &trans           &trans
+&none  &kt LEFT_BRACE  &kt AMPERSAND    &kp KP_MULTIPLY       &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none            &none      &none          &none     &none
+&none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
+&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none  &none            &none      &none          &none     &none
+                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &none  &none            &none
             >;
         };
 
-        fun_layer {
+        Fun {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8      &kp F9     &kp SYSREQ         &trans  &trans           &trans     &trans         &trans    &trans
-&trans  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &trans
-&trans  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &trans  &trans           &trans     &trans         &trans    &trans
-                         &kp C_MENU  &kp SPACE  &kp TAB            &trans  &trans           &trans
+&none  &kp F12  &kp F7  &kp F8      &kp F9     &kp SYSREQ         &none  &none            &none      &none          &none     &none
+&none  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
+&none  &kp F10  &kp F1  &kp F2      &kp F3     &kp PAUSE_BREAK    &none  &none            &none      &none          &none     &none
+                        &kp C_MENU  &kp SPACE  &kp TAB            &none  &none            &none
             >;
         };
     };
