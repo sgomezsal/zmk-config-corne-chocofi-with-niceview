@@ -82,7 +82,7 @@
             label = "Mouse";
         };
 
-        Button {
+        button_layer {
             bindings = <
 &none  &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE  &kp C_AC_REDO    &kp C_AC_REDO  &kp C_AC_PASTE  &kp C_AC_COPY      &kp K_CUT     &kp C_AC_UNDO  &none
 &none  &kp LGUI       &kp LALT      &kp LCTRL      &kp LSHFT       &none            &none          &kp LSHFT       &kp RIGHT_CONTROL  &kp RALT      &kp LGUI       &none
@@ -93,7 +93,7 @@
             label = "Button";
         };
 
-        Media {
+        media_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -110,7 +110,7 @@
             label = "Media";
         };
 
-        Num {
+        num_layer {
             bindings = <
 &none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RIGHT_BRACKET    &none  &none            &none      &none          &none     &none
 &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL            &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
@@ -121,7 +121,7 @@
             label = "Num";
         };
 
-        Sym {
+        sym_layer {
             bindings = <
 &none  &kt LEFT_BRACE  &kt AMPERSAND    &kp KP_MULTIPLY       &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none            &none      &none          &none     &none
 &none  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
@@ -132,7 +132,7 @@
             label = "Sym";
         };
 
-        Fun {
+        fun_layer {
             bindings = <
 &none  &kp F12  &kp F7  &kp F8      &kp F9     &kp SYSREQ         &none  &none            &none      &none          &none     &none
 &none  &kp F11  &kp F4  &kp F5      &kp F6     &kp SCROLLLOCK     &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp LGUI  &none
