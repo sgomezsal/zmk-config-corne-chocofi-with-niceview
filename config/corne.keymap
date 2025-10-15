@@ -12,6 +12,18 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    behaviors {
+        hml: homewrow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS_LEFT_HAND";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <39 40 41 19 30 18 6 9 20 32 31 7 8 21 33 34 35 22 23 11 10>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,10 +35,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q       &kp W           &kp F         &kp P             &kp B        &kp J        &kp L              &kp U         &kp Y            &kp SQT      &none
-&none  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E   &mt RIGHT_ALT I  &mt LGUI O   &none
-&none  &lt 3 Z     &kp X           &kp C         &kp D             &kp V        &kp K        &kp H              &kp COMMA     &kp DOT          &lt 3 SLASH  &none
-                                   &lt 4 ESCAPE  &lt 1 SPACE       &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE    &lt 7 DELETE
+&none  &kp Q        &kp W           &kp F         &kp P             &kp B        &kp J        &kp L              &kp U         &kp Y            &kp SQT      &none
+&none  &hml LGUI A  &mt LEFT_ALT R  &mt LCTRL S   &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt RCTRL E   &mt RIGHT_ALT I  &mt LGUI O   &none
+&none  &lt 3 Z      &kp X           &kp C         &kp D             &kp V        &kp K        &kp H              &kp COMMA     &kp DOT          &lt 3 SLASH  &none
+                                    &lt 4 ESCAPE  &lt 1 SPACE       &lt 2 TAB    &lt 6 ENTER  &lt 5 BACKSPACE    &lt 7 DELETE
             >;
 
             label = "BASE";
