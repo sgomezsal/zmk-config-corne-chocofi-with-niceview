@@ -23,7 +23,7 @@
 &trans  &kp Q       &kp W           &kp F        &kp P             &kp B        &kp J    &kp L              &kp U        &kp Y            &kp SQT      &trans
 &trans  &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LEFT_SHIFT T  &kp G        &kp M    &mt RIGHT_SHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt LGUI O   &trans
 &trans  &lt 3 Z     &kp X           &kp C        &kp D             &kp V        &kp K    &kp H              &kp COMMA    &kp DOT          &lt 3 SLASH  &trans
-                                    &kp LGUI     &lt 1 SPACE       &kp SPACE    &kp RET  &mo 0              &kp RALT
+                                    &kp LGUI     &lt 1 SPACE       &lt 2 TAB    &kp RET  &mo 0              &kp RALT
             >;
         };
 
