@@ -41,6 +41,11 @@
             bindings = <&kp RA(N)>;
             key-positions = <1 21>;
         };
+
+        vim_combo {
+            bindings = <&sl 8>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
